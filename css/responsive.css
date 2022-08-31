@@ -1,0 +1,188 @@
+@media screen and (max-width:1200px){
+
+}
+
+@media screen and (max-width:768px){
+  #header div.inner{
+    height: 16.02083333333333vw;
+  }
+  #header div.inner h1{
+    width: 25.44791666666667vw;
+    height: 6.557291666666667vw;
+  }
+  
+  #header div.inner a.menu{
+    position: relative;
+    display: block;
+    width: 7vw;
+    height: 5vw;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    font-size: 0px;
+    position: relative;
+  }  
+  
+
+
+  #header div.inner a.menu::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7vw;
+    height: 2px;
+    right: 0;
+    top: 50%;
+    background: white;
+  }
+  
+  #header div.inner ul{
+    display: none;
+  }
+  
+  
+  /* ------타이틀 영역 ------*/
+  div.inner1 div.text{
+    padding-left: 20px;
+  }
+  div.inner1 div.text h2{
+    font-size: 9.167vw;
+  }
+  div.inner1 div.text P{
+    font-size: 3.302083333333333vw;
+  }
+  div.inner1 div.text a.left{
+    width: 10vw;
+    height: 10vw;
+    top: 16vw;
+    left: 5vw;
+  }
+    div.inner1 div.text a.right{
+    width: 10vw;
+    height: 10vw;
+    top: 16vw;
+    left: 18vw; 
+  }
+  
+  /*메인 영역*/
+  main div.inner2{
+    width: 90%
+  }
+  
+  main div.inner2 h2{
+   
+  }
+  main div.inner2 section.first{
+    height: 100%;
+    display: block;
+    width: 100%;
+  }
+  main div.inner2 section.first article{
+    padding: 20px;
+   
+  }
+  main div.inner2 section.first div.a article{
+    height: 280px;
+  }
+  
+  main div.inner2 section.first>*{
+    width: 100% !important;
+  }
+  main div.inner2 section.first > article:first-child{
+    height: 70vw;
+  }
+  main div.inner2 section.first article{
+    margin-bottom: 30px;
+  }
+  main div.inner2 section.first article h3{
+    font-size: 3.3vw;
+  }
+  main div.inner2 section.first article p{
+    font-size: 2vw;
+  }
+  main div.inner2 section.first article a{
+    width: 20vw;
+    height: 5vw;
+    line-height: 5vw;
+    font-size: 2.5vw;
+  }
+  
+  section.second{
+    margin: 80px 0;
+    display: block;
+  }
+  
+  section.second div.a{
+    width: 100%;
+    text-align: center;
+    height: 150px
+  }
+  section.second div.a p{
+    font-size: 5vw;
+    width: 100%;
+  }
+  section.second div.b{
+    width: 100%;
+    align-items: center;
+  }
+  section.second div.b p{
+    text-align: center;
+    font-size: 4.3vw;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  section.second div.b p:nth-child(2){
+    font-size: 2.45vw;
+    line-height: 2;
+    margin-bottom: 20px;
+  }
+  section.second div.b p:nth-child(3){
+    font-size: 2.4vw;
+    line-height: 2;
+  }
+  section.second div.b a{
+  
+  }
+  section.second div.b a::before{
+  transform: translateY(40px) translateX(-4px);
+}
+  div.inner3 div.mainsub{
+   flex-direction: column;
+  }
+  
+  div.inner3 div.mainsub article{
+    width: 100%;
+    
+  }
+  
+  div.inner3 div.mainsub article:nth-child(2){
+   border-top: 1px solid #dadfe6;
+   border-bottom: 1px solid #dadfe6;  
+    
+  }
+/* footer*/
+  footer div.inner{
+    padding: 30px;
+    height: auto;
+  }
+  
+  footer div.inner ul{
+   flex-direction: column;
+    font-size: 2vw;
+    line-height: 2;
+    margin-bottom: 30px;
+  }
+  
+  footer div.inner ul li{
+    margin: 0;
+  }
+  
+  footer div.inner p{
+    font-size: 2vw;
+  }
+
+}
+
+
+
+
+

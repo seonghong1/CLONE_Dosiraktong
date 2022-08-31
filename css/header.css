@@ -1,0 +1,55 @@
+#header {
+   width: 100%;
+   position: fixed;
+   z-index: 1;
+   border-bottom:  1px solid rgba(255,255,255,0.3);
+  }
+#header div.inner {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  align-items: center;  
+  }
+#header div.inner h1 {
+  font-size: 0px;
+  background-image: url(../img/logo_white.png);
+  width: 134px;
+  height: 35px;
+  background-size: cover;
+  }
+#header div.inner a.menu{
+  display: none;
+}
+
+
+#header div.inner h1 a {
+  color: white;
+  }
+#header div.inner ul {
+ display: flex;
+ gap: 60px;
+ padding-right: 40px;
+  }
+#header div.inner ul li {
+  font-weight: 900;
+  }
+#header div.inner ul li::after{
+ content: "";
+ border-bottom: 2px solid white;
+ display: block;
+ transform: translateY(10px) ;
+ transition-duration: 0.3s;  
+ opacity: 0;
+ width: 0px;
+  }
+#header div.inner ul li:hover::after{
+ transform: scale(1);
+ transform: translateY(10px) ;
+ opacity: 1;
+ width: 100%;
+  }
+#header div.inner ul li a {
+  color: white;
+  }

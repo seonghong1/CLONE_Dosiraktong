@@ -1,0 +1,28 @@
+footer {
+    background: #353535;
+    color: rgba(255,255,255,0.4);
+  }
+  footer div.inner {
+  text-align: center;
+  padding: 50px;
+  height: 150px;
+  line-height: 2
+  }
+  footer div.inner ul {
+    
+  display: flex;
+  justify-content: center;
+  }
+  footer div.inner ul li {
+    
+  margin-bottom: 20px;
+  }
+  footer div.inner p {
+    
+  }
+
+
+footer div.inner p:nth-child(3){
+  margin-top: 60px;
+  color: rgba(255,255,255,0.2);
+}
