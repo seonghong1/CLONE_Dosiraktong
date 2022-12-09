@@ -53,15 +53,6 @@ main div.inner2 section.first div.a article:last-child{
   background-size: cover;
   }
 
-main div.inner2 section.first article:hover:first-child{
-  transform: rotate(1deg) scale(1.1);
-  opacity: 0.8; 
-}
-main div.inner2 section.first article:hover:last-child{
-  transform: rotate(1deg) scale(1.1);
-  opacity: 0.8;
-  
-}
 
 main div.inner2 section.first div.a {
   width: 50%;
@@ -87,7 +78,13 @@ main div.inner2 section.first div.a {
     box-sizing: border-box;
     height: 50px;
     line-height: 50px;
+    font-weight: 600;
+    transition: all 0.5s;
   }
+main div.inner2 section.first article a:hover{
+  background: white;
+  color: black;
+}
 main div.inner2 section.first article a::before{
   content: "";
   width: 10px;
@@ -154,6 +151,7 @@ section.second div.b p:nth-child(3) {
   line-height: 50px;
   height: 50px;
  border-bottom: 2px solid ;
+  position:relative;
 }
 section.second div.b a::after{
   content: "";
@@ -162,14 +160,31 @@ section.second div.b a::after{
   height: 26px;
   display: block;
   background-size: cover;
-  transform: translateY(-35px) translateX(95px);
   transition-duration: 0.7s;
+  position: absolute;
+  top: 30%;
+  right: 0;
 }
 
 section.second div.b a:hover::after{
-  transform: translateY(-19px) translateX(125px);
+  animation-name: move_arrow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
-
+@keyframes move_arrow {
+  0%{
+      transform: translateX(0);
+  }
+  33%{
+    transform: translateX(20px);
+  }
+  66%{
+    transform: translateX(-20px);
+  }
+  100%{
+    transform: translateX(0);
+}
+}
 div.inner3 {
     
   width: 100%;
